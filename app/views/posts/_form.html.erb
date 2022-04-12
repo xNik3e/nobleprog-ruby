@@ -17,18 +17,18 @@
   </div>
 
   <div>
-    <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div>
     <%= form.label :summary, style: "display: block" %>
     <%= form.text_area :summary %>
   </div>
 
   <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div>
     <%= form.label :user_id, style: "display: block" %>
-    <%= form.collection_select:user_id, User.all, :id, :email %>
+    <%= form.text_field :user_id %>
   </div>
 
   <div>

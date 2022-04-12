@@ -1,7 +1,9 @@
-<h1>Aktualny czas </h1>
-<p>Aktualny czas: <%= DateTime.now %></p>
-<% if is_daytime%>
-    <img src=https://d.newsweek.com/en/full/1504436/th-sun.jpg width=250 height=300>
+<h1>Aktualny czas</h1>
+
+<p> Aktualny czas: <%= DateTime.now %></p>
+
+<% if is_daytime? %>
+<img src='https://www.radiozet.pl/Co-gdzie-kiedy-jak/Pierwszy-dzien-wiosny-2020-dlugosc-dnia-i-nocy-20-i-21-marca-2020='>
 <% else %>
-    <img src=https://zone1-ibizaspotlightsl.netdna-ssl.com/sites/default/files/styles/auto_1500_width/public/event-images/136033/slideshow-1594641730.png width=250 height=300>
-<%end%>
+<img src= 'https://jestem-franky.fandom.com/pl/wiki/Noc'>
+<% end %>
